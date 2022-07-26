@@ -10,6 +10,11 @@ const Post = sequelizeConnection.define('post', {
         allowNull: false
     },
 
+    title: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+
     content: {
         type: Sequelize.TEXT,
         allowNull: false,
@@ -26,7 +31,7 @@ const Post = sequelizeConnection.define('post', {
 
 },{
     Sequelize: sequelizeConnection,
-    timestamps: false,
+    timestamps: true,
     freezeTableName: true,
     modelName: 'posts',
     underscore: true
