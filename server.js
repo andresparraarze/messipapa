@@ -7,16 +7,16 @@ const helpers = require('./utils/helpers');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const sequelize = require('./config/sequelizeConnection');
+const sequelizeConnection = require('./config/sequelizeConnection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
     secret: 'aja',
-    cookie: (),
+    cookie: {},
     resave: false,
     saveUninitialized: true,
     store: new SequelizeStore({
-        db: sequelize
+        db: sequelizeConnection
     })
 };
 
@@ -30,9 +30,10 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(require('./controllers/'));
+//app.use(require('./controllers/'));
+require('./models');
 
 app.listen(PORT, () => {
     console.log(`Working on port ${PORT}!`);
-    sequelize.sync({force: true});
+    sequelizeConnection.sync({force: true}).then(() => require('./seeds'))
 });

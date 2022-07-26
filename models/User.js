@@ -35,7 +35,8 @@ const User = sequelizeConnection.define('User', {
 });
 
 User.beforeCreate(user => {
-    user.password = await bcrypt.hash(user.password, 15);
+    console.log('data intercepted:', user);
+    user.password = bcrypt.hash(user.password, 15);
 });
-
+// await to bcrypt
 module.exports = User;
