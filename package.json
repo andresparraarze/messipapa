@@ -1,0 +1,32 @@
+{
+  "name": "mvc-hallenge-tech-blog",
+  "version": "1.0.0",
+  "description": "## Table of Contents:   1. [Description](#description)    2. [Installation](#Installation)   3. [Usage](#Usage)     4. [Contributing](#Contributing)   5. [Tests](#Tests)   6. [License](#License)   7. [GitHub](#GitHub)   8. [Email](#Email)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresparraarze/cruzsanta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andresparraarze/cruzsanta/issues"
+  },
+  "homepage": "https://github.com/andresparraarze/cruzsanta#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.4",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "express.js": "^1.0.0",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.3"
+  }
+}
