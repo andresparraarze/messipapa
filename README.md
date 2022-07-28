@@ -13,7 +13,7 @@ A blog site in which developers can publish their blog posts and coment on other
 get the code, create a .env file, then do npm i, then npm start and it should be running, if needed then do node seeds too
 
 ## Usage
-on the page itself utilize it as any other blog site in which you can write and post opinions and comments
+on the page itself utilize it as any other blog site in which you can write and post opinions and comments you can use this link to the deployed application: https://github.com/andresparraarze/messipapa.git
 
 ## GitHub
 andresparraarze
