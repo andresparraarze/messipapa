@@ -10,7 +10,7 @@
 A blog site in which developers can publish their blog posts and coment on other developers posts as well 
 
 ## Installation
-get the code, then do npm i, then npm start and it should be running
+get the code, create a .env file, then do npm i, then npm start and it should be running, if needed then do node seeds too
 
 ## Usage
 on the page itself utilize it as any other blog site in which you can write and post opinions and comments
